@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亲和图 - Mobile Health Check User Friendly Interface</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  .affinity-diagram {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .category {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 270px;
+  }
+  .category h2 {
+    color: #5a6268;
+    font-size: 18px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  .note {
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+  /* 不同颜色的便签 */
+  .note.purple { background-color: #e8daef; border: 1px solid #c39bd3; }
+  .note.green { background-color: #d5f5e3; border: 1px solid #82e0aa; }
+  .note.blue { background-color: #d6eaf8; border: 1px solid #5dade2; }
+  .note.yellow { background-color: #fcf3cf; border: 1px solid #f7dc6f; }
+  .note.orange { background-color: #fae5d3; border: 1px solid #f0b27a; }
+  .category.purple { background-color: #f0ebf3; border: 1px solid #c39bd3; }
+  .category.green { background-color: #e2f1e9; border: 1px solid #82e0aa; }
+  .category.blue { background-color: #dfebf3; border: 1px solid #5dade2; }
+  .category.yellow { background-color: #f0ebd6; border: 1px solid #f7dc6f; }
+  .category.orange { background-color: #f1e4d9; border: 1px solid #f0b27a; }
+</style>
+</head>
+<body>
+
+<h1>亲和图 - 移动健康检查用户友好界面</h1>
+<div class="affinity-diagram">
+
+  <!-- Category 1: 健康与生活习惯 -->
+  <div class="category purple">
+    <h2>健康与生活习惯</h2>
+    <div class="note purple">忙碌时保持健康习惯较难，尤其是饮食方面。</div>
+    <div class="note purple">作息不规律对健康影响较大，尤其在加班后。</div>
+    <div class="note purple">久坐对健康影响大，常因工作或学习坐太久。</div>
+    <div class="note purple">关注睡眠质量，偶尔受压力影响。</div>
+    <div class="note purple">关注血压和体重，健康问题随着年龄增长更突出。</div>
+  </div>
+
+  <!-- Category 2: 数据隐私需求 -->
+  <div class="category green">
+    <h2>数据隐私需求</h2>
+    <div class="note green">希望平台提供数据加密和身份验证等安全措施。</div>
+    <div class="note green">希望平台提供数据加密和访问控制等隐私措施。</div>
+    <div class="note green">对数据隐私有担忧，希望数据加密并妥善存储。</div>
+    <div class="note green">如果能获得更精准的建议，愿意与医疗机构共享数据。</div>
+    <div class="note green">在健康管理帮助下，愿意共享数据，但希望透明告知。</div>
+  </div>
+
+  <!-- Category 3: 健康管理工具需求 -->
+  <div class="category blue">
+    <h2>健康管理工具需求</h2>
+    <div class="note blue">希望平台成为“时常提醒”的助手，帮助保持健康习惯。</div>
+    <div class="note blue">希望平台提供定期提醒和支持，帮助保持健康。</div>
+    <div class="note blue">希望平台能在需要时提醒，而不是过于频繁。</div>
+    <div class="note blue">依赖健康管理应用来提醒自己保持锻炼。</div>
+    <div class="note blue">如果有工具能帮助制定健康计划，会考虑持续使用。</div>
+  </div>
+
+  <!-- Category 4: 便捷性与使用体验 -->
+  <div class="category yellow">
+    <h2>便捷性与使用体验</h2>
+    <div class="note yellow">科技手段让健康管理更方便，尤其是手机APP。</div>
+    <div class="note yellow">使用健康管理应用提醒保持锻炼。</div>
+    <div class="note yellow">希望健康平台提供定期提醒和支持，帮助保持健康。</div>
+    <div class="note yellow">简单易用的健康管理工具更适合日常使用。</div>
+    <div class="note yellow">依赖便捷的健身APP来保持健康习惯。</div>
+  </div>
+
+  <!-- Category 5: 健康问题关注点 -->
+  <div class="category orange">
+    <h2>健康问题关注点</h2>
+    <div class="note orange">关注血压、血糖和体重，直接影响健康。</div>
+    <div class="note orange">关注久坐问题，认为对健康有很大影响。</div>
+    <div class="note orange">睡眠质量问题偶尔影响健康，需改善。</div>
+    <div class="note orange">作息不规律带来健康风险，影响睡眠和体重。</div>
+    <div class="note orange">饮食管理困难，忙碌时难以保持健康习惯。</div>
+  </div>
+
+</div>
+
+</body>
+</html>
